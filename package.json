@@ -1,25 +1,53 @@
 {
   "name": "semantic-ui-carousel-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
-  },
+  "version": "1.0.0",
+  "description": "Carousel component for semantic-ui-react ",
+  "main": "build/index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "keywords": [
+    "semantic-ui-react",
+    "semantic-ui",
+    "semantic-ui-react-carousel",
+    "carousel",
+    "reactjs",
+    "react",
+    "components"
+  ],
+  "author": "Aram Rafeq <aramrafeq2@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^2.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "style-loader": "^0.13.0"
+  },
+  "dependencies": {
+    "react-scripts": "1.1.4",
+    "semantic-ui-react": "^0.85.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AramRafeq/semantic-ui-carousel-react"
+  },
+  "bugs": {
+    "url": "https://github.com/AramRafeq/semantic-ui-carousel-react/issues"
+  },
+  "homepage": "https://github.com/AramRafeq/semantic-ui-carousel-react#readme"
+
+
 }
