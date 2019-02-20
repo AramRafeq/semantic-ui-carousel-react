@@ -19560,7 +19560,7 @@ var Carousel = function (_React$Component) {
 
       return _react2.default.createElement(
         _semanticUiReact.Card,
-        null,
+        { className: 'carousel-container' },
         _react2.default.createElement(
           _semanticUiReact.Card.Content,
           { className: 'carousel' },
@@ -64136,10 +64136,10 @@ var insertInto;
 
 
 
-var options = {"hmr":true}
+var options = {"attrs":{"id":"carousel-style"},"hmr":true}
 
 options.transform = transform
-options.insertInto = undefined;
+options.insertInto = () => document.querySelector("body");
 
 var update = __webpack_require__(665)(content, options);
 
