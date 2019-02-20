@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-carousel-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Carousel component for semantic-ui-react ",
   "main": "build/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "css-loader": "^2.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "style-loader": "^0.13.0"
+    "style-loader": "^0.23.1"
   },
   "dependencies": {
     "react-scripts": "1.1.4",
@@ -48,6 +48,4 @@
     "url": "https://github.com/AramRafeq/semantic-ui-carousel-react/issues"
   },
   "homepage": "https://github.com/AramRafeq/semantic-ui-carousel-react#readme"
-
-
 }

@@ -19,7 +19,19 @@ module.exports = {
           }
         }
       },
-      { test: /\.css$/, use: 'css-loader' },
+      {
+        test: /\.css$/,
+        use: [
+          { 
+            loader: "style-loader" ,
+            options: {
+              insertInto: () => document.querySelector("body"),
+              attrs: { id: 'carousel-style' }
+            }
+          },
+          { loader: "css-loader" }
+        ]
+      }
     ]
   },
   externals: {

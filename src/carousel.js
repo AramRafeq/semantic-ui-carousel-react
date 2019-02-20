@@ -54,7 +54,7 @@ class Carousel extends React.Component{
   }
   render(){
     return (
-      <Card>
+      <Card className='carousel-container'>
         <Card.Content className='carousel'>
           {
             (this.props.elements).map((element, index) => {
