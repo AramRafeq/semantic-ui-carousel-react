@@ -1,9 +1,9 @@
-# Semantic-ui-react-carousel
+# Semantic-ui-carousel-react
 Carousel component for semantic ui react 
 
 **install**
 
-    npm i semantic-ui-react-carousel
+    npm i semantic-ui-carousel-react
    
 
 **props**
