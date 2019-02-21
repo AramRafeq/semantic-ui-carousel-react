@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-carousel-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Carousel component for semantic-ui-react ",
   "main": "build/index.js",
   "scripts": {
