@@ -13,6 +13,9 @@ class Carousel extends React.Component{
 
       this.interval = setInterval(() => {
         this.nextSlide()
+        try{
+          this.props.onSlideChange(this.state.currentIndex,this.props.elements[this.state.currentIndex])
+        }catch(e){}        
       }, this.props.duration);
     }
   }
@@ -54,7 +57,7 @@ class Carousel extends React.Component{
   }
   render(){
     return (
-      <Card className='carousel-container'>
+      <Card fluid className='carousel-container'>
         <Card.Content className='carousel'>
           {
             (this.props.elements).map((element, index) => {
