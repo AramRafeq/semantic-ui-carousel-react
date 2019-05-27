@@ -19,7 +19,8 @@ Carousel component for semantic ui react
 - ***showIndicators[Boolean]*** : decides that if the carousel should display indicators for slides which is also a navigation option like next an previous buttons
 
 - ***onSlideChange(index, element)[function]*** : callback function called everytime a slide changes 
-	
+
+[See also the live example](https://codesandbox.io/embed/blue-currying-dkvk0)
 **usage example** 
 
     
