@@ -63,7 +63,7 @@ class Carousel extends React.Component{
             (this.props.elements).map((element, index) => {
               if(this.state.currentIndex === index ){
                 return (
-                  <Transition key={index} transitionOnMount={true} visible={true} duration={1000} animation={this.props.animation}>
+                  <Transition key={`index_${+new Date()}`} transitionOnMount={true} visible={true} duration={1000} animation={this.props.animation}>
                     {this.props.elements[index].render()}
                   </Transition>
                 )
