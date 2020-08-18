@@ -1,5 +1,7 @@
 import React from 'react';
 import {Card,Transition, Button, Label} from 'semantic-ui-react'
+import uniqid from 'uniqid'
+
 import './carousel.css'
 class Carousel extends React.Component{
   constructor(props){
@@ -57,13 +59,13 @@ class Carousel extends React.Component{
   }
   render(){
     return (
-      <Card fluid className='carousel-container'>
+      <Card fluid className='carousel-container' border={false}>
         <Card.Content className='carousel'>
           {
             (this.props.elements).map((element, index) => {
               if(this.state.currentIndex === index ){
                 return (
-                  <Transition key={`index_${+new Date()}`} transitionOnMount={true} visible={true} duration={1000} animation={this.props.animation}>
+                  <Transition key={uniqid()} transitionOnMount={true} visible={true} duration={1000} animation={this.props.animation}>
                     {this.props.elements[index].render()}
                   </Transition>
                 )
@@ -76,13 +78,13 @@ class Carousel extends React.Component{
               ? (this.props.elements).map((elemnt, index)=>{
                   if(this.state.currentIndex === index ){
                     return (
-                      <a>
+                      <a key={uniqid()}>
                         <Label onClick = {()=> this.gotToSlide(index) } circular color='black' empty  />  
                       </a>
                     )
                   }else{
                     return (
-                      <a>
+                      <a key={uniqid()}>
                         <Label onClick = {()=> this.gotToSlide(index) } circular color='grey' empty  />  
                       </a>
                     )

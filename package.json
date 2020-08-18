@@ -1,11 +1,11 @@
 {
   "name": "semantic-ui-carousel-react",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Carousel component for semantic-ui-react ",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "parcel example/example.html",
-    "build": "parcel build src/index.js"
+    "dev": "npx parcel example/example.html",
+    "build": "npx parcel build src/index.js --no-source-maps"
   },
   "keywords": [
     "semantic-ui-react",
@@ -30,12 +30,14 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.0"
+    "semantic-ui-react": "^1.2.0",
+    "uniqid": "^5.2.0"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
+    "parcel": "^1.12.4",
     "parcel-bundler": "1.12.4"
   }
 }
