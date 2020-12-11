@@ -14,10 +14,7 @@ class Carousel extends React.Component{
     if(this.props.duration){
 
       this.interval = setInterval(() => {
-        this.nextSlide()
-        try{
-          this.props.onSlideChange(this.state.currentIndex,this.props.elements[this.state.currentIndex])
-        }catch(e){}        
+        this.nextSlide()   
       }, this.props.duration);
     }
   }
@@ -27,15 +24,24 @@ class Carousel extends React.Component{
       clearInterval(this.interval);
     }
   }
+  slideChange() {
+    try{
+      this.props.onSlideChange(this.state.currentIndex,this.props.elements[this.state.currentIndex])
+    }catch(e){}        
+  }
+
   nextSlide() {
     this.setState({
       currentIndex: (this.state.currentIndex+1)%this.props.elements.length
     })
+    this.slideChange()
   }
+
   prevSlide() {
     this.setState({
       currentIndex: ((this.state.currentIndex-1)%this.props.elements.length)<0 ? this.props.elements.length-1 :(this.state.currentIndex-1)%this.props.elements.length
     })
+    this.slideChange()
   }
   gotToSlide(index) {
     if(this.props.duration){
@@ -111,5 +117,3 @@ class Carousel extends React.Component{
 }
 
 export default Carousel;
-
-
